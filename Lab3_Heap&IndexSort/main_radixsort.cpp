@@ -40,18 +40,11 @@ int main(){
             for(int cnt = 0; cnt < ind && j + cnt < end; cnt++, pow *= 10)
                 tmp+=(ori[i][j+cnt] - '0') * pow;
             x[i][j/ind] = tmp;
-//            cerr << tmp << ' ' << j/ind << endl;
         }
     }
     maxend = (maxend - 1) / ind;
     maxrepo = pow10(ind);
-/*    cerr << ind << ' ' << maxend << ' ' << maxrepo << endl;
-    for(int i = 1; i <= n; i++){
-        for(int j = 0; j <= maxend; j++){
-            printf("%d ", x[i][j]);
-        }printf("\n");
-    }
-*/    for(int i = 0; i <= maxend; i++){
+    for(int i = 0; i <= maxend; i++){
         for(int j = 1; j <= n; j++)
             repo[x[ans[j]][i]].push_back(ans[j]);
         int cnt = 0;
