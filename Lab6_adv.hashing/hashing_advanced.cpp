@@ -208,12 +208,12 @@ void testCuckooHashing(double loadfactor){
 int main(){
     srand(time(NULL));
     primeSieve();
-//    int t1 = clock();
+    int t1 = clock();
     cerr << "Prework finished" << endl;
-//    testPerfectHashing();
-//    int t2 = clock();
-//    cerr << "time consumption: " << 1.0*(t2-t1)/CLOCKS_PER_SEC << endl; 
-//    cerr << "Perfect Hashing tested." << endl;
+    testPerfectHashing();
+    int t2 = clock();
+    cerr << "time consumption: " << 1.0*(t2-t1)/CLOCKS_PER_SEC << endl; 
+    cerr << "Perfect Hashing tested." << endl;
     ofstream fout("CuckooHashing.csv");
     for(double i = 0.01; i <= 0.99; i += 0.01){
         int t1 = 0, t2 = 0, con = 0;;
