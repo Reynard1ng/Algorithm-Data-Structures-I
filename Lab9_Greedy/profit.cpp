@@ -8,8 +8,8 @@ using namespace std;
 int n,a[110000];
 
 int main(){
-    freopen("profit.in","r",stdin);
-    freopen("profit.out","w",stdout);
+//    freopen("profit.in","r",stdin);
+//    freopen("profit.out","w",stdout);
     scanf("%d",&n);
     while(n!=0){
         int ans=-1,minn = 1e9;
